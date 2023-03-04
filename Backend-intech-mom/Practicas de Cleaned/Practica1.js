@@ -1,8 +1,8 @@
 // Punto 1
 console.log ("Punto 1--->");
-var nombre = "Domhnall"; //Nombre de mí personaje
-var apellido = "Gleeson"; //Apellido de mí personaje
-var edad = 21; //Edad de mí personaje
+let nombre = "Domhnall"; //Nombre de mí personaje
+let apellido = "Gleeson"; //Apellido de mí personaje
+let edad = 21; //Edad de mí personaje
 
 //Punto 2
 console.log ("Punto 2--->");
@@ -12,7 +12,7 @@ console.log ("Edad: " + edad + ", " + "Tipo: " + typeof(edad) );
 
 //Punto 3
 console.log ("Punto 3--->");
-var city;
+let city;
 city = "Londres";
 console.log(city);
 city = "Cambridge";
@@ -28,18 +28,21 @@ console.log(city);
 console.log ("Punto 4--->");
 typeof(20)
 // Predicción: number
+console.log (20);
 console.log (typeof(20));
 
 typeof(true)
 // Predicción: boolean
 console.log (typeof(true));
 
-"1" + "3"
+"1" + "3" // concatenar
 // Predicción: string
+console.log ("1" + "3")
 console.log (typeof("1" + "3"));
 
-"hamburgers" - "s" // coerción de tipos, por operadores aritméticos sustracción
+"hamburgers" - "s" // coerción de tipos, por operadores aritméticos sustracción_number
 // Predicción: number
+console.log ("hamburgers" - "s");
 console.log (typeof("hamburgers" - "s"));
 
 typeof(95.5)
@@ -50,19 +53,19 @@ typeof(1 != 2)
 // Predicción: boolean
 console.log (typeof(1 != 2));
 
-"johnny" + 5 // coerción de tipos, por operador +
+"johnny" + 5 // coerción de tipos, por operador +_string
 // Predicción: string
 console.log (typeof("johnny" + 5));
 
-typeof(NaN) //Valor simbólico
+typeof(NaN) //Valor simbólico (Not a Number)
 // Predicción: number
 console.log (typeof(NaN));
 
-"1" - "3" //coerción de tipos, por operadores aritméticos sustracción
+"1" - "3" //coerción de tipos, por operadores aritméticos sustracción_number
 // Predicción: number
 console.log (typeof("1" - "3"));
 
-"johnny" - 5 // coerción de tipos, por operadores aritméticos sustracción
+"johnny" - 5 // coerción de tipos, por operadores aritméticos sustracción_number
 // Predicción: number
 console.log (typeof("johnny" - 5));
 
@@ -94,9 +97,9 @@ console.log(saludo.toLowerCase() + " " + saludo2.toUpperCase());
 
 //Punto 8
 console.log ("Punto 8--->");
-var precio;
-var descuento;
-var precioConDescuento;
+let precio;
+let descuento;
+let precioConDescuento;
 precio = 100;
 descuento = 20;
 precioConDescuento = precio - (precio * (descuento/100));
@@ -104,14 +107,14 @@ console.log("Su producto tiene un precio de " + precioConDescuento + ", " + "el 
 
 //Punto 9
 console.log ("Punto 9--->");
-var cincoNumeros = [2, 4, 6, 8, 6];
-var suma = cincoNumeros.reduce((accumulator, currentValue) => accumulator + currentValue); 
-var promedio = (suma/(cincoNumeros.length));
+let cincoNumeros = [2, 4, 6, 8, 6];
+let suma = cincoNumeros.reduce((accumulator, currentValue) => accumulator + currentValue); 
+let promedio = (suma/(cincoNumeros.length));
 console.log("El promedio es = " + promedio);
 
 //Punto 10
 console.log ("Punto 10--->");
-var diametro = 20;
+let diametro = 20;
 const perimetro = (diametro * Math.PI);
 console.log("El perimetro de un circulo de " + diametro + " es " + perimetro );
 
